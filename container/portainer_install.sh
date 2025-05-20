@@ -28,4 +28,5 @@ sudo docker ps | grep portainer
 
 echo 
 echo ">>> Portainer wurde erfolgreich installiert und laeuft!"
-echo  
+echo 
+

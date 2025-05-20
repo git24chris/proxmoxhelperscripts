@@ -1,15 +1,18 @@
 #!/bin/bash
+
 echo "Willkommen bei der Postfix-Relay-Server-Konfiguration unter Proxmox!"
 read -p "Geben Sie den SMTP-Server ein: " smtp_server
 read -p "Geben Sie den SMTP-Port ein (z. B. 587): " smtp_port
 read -p "Geben Sie den SMTP-Benutzernamen ein: " smtp_user
 read -s -p "Geben Sie das SMTP-Passwort ein: " smtp_password
 echo
-read -p "Sind Sie sicher, dass Sie die Postfix-Konfiguration durchführen möchten? (ja/nein): " confirmation
+read -p "Sind Sie sicher, dass Sie die Postfix-Konfiguration durchfuehren moechten? (ja/nein): " confirmation
+
 if [ "$confirmation" != "ja" ]; then
     echo "Abbruch der Konfiguration."
     exit 1
 fi
+
 echo "Postfix wird installiert und konfiguriert..."
 apt-get update && apt-get install -y postfix
 postfix_config="/etc/postfix/main.cf"
@@ -25,6 +28,9 @@ EOL_CONFIG
 echo "[$smtp_server]:$smtp_port $smtp_user:$smtp_password" > /etc/postfix/sasl_passwd
 postmap /etc/postfix/sasl_passwd
 systemctl restart postfix
+
 echo "Postfix wurde erfolgreich als Relay-Server konfiguriert!"
-echo "echo Testnachricht | mail -s Testbetreff -a From:$smtp_user [Empfänger-E-Mail-Adresse]"
+echo "echo Testnachricht | mail -s Testbetreff -a From:$smtp_user [Empfaenger-E-Mail-Adresse]"
+echo
+
 

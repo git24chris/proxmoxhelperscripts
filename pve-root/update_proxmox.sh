@@ -19,7 +19,6 @@ apt-get -y autoremove
 
 log ">>> Updates erfolgreich abgeschlossen."
 
-
 # Das Subscription Popup unterbinden
 log ">>> Popup mit Hinweis auf das Subscription Model unterbinden."
 
@@ -39,7 +38,7 @@ echo "Updateueberpruefung/~vorgang durchgefuehrt: $(date)" >> "/root/last_update
 if [ -f /var/run/reboot-required ]; then
     log ">>> Ein Neustart ist erforderlich. Starte das System neu..."
     # Benachrichtigung aufs den msgServer unterhalb dieser Zeile einfuegen
-    curl -X -s POST "https://mping.die-czajas.goip.de/message?token=A130xYR1BhwsizU" -F "title=Proxmox Aktualisierung: DellServer" -F "message=Aktualisierung erfolgreich durchgeführt, Kernel-Update, Server-Neustart."
+    curl -X -s POST "https://mping.die-czajas.goip.de/message?token=A130xYR1BhwsizU" -F "title=Proxmox Aktualisierung: DellServer" -F "message=Aktualisierung erfolgreich durchgefuehrt, Kernel-Update, Server-Neustart."
     echo #Leerzeile
     # Ende Benachrichtigungsblock
 
@@ -47,8 +46,8 @@ if [ -f /var/run/reboot-required ]; then
 
 else
     log ">>> Kein Neustart erforderlich."
-    # Benachrichtigung aufs den msgServer unterhalb dieser Zeile einfuegen
-    curl -X -s POST "https://mping.die-czajas.goip.de/message?token=A130xYR1BhwsizU" -F "title=Proxmox Aktualisierung: DellServer" -F "message=Aktualisierung erfolgreich durchgeführt. kein Server-Neustart."
+    # Benachrichtigung auf dem msgServer unterhalb dieser Zeile einfuegen
+    curl -X -s POST "https://mping.die-czajas.goip.de/message?token=A130xYR1BhwsizU" -F "title=Proxmox Aktualisierung: DellServer" -F "message=Aktualisierung erfolgreich durchgefuehrt. Kein Server-Neustart."
     echo #Leerzeile
     # Ende Benachrichtigungsblock
 fi

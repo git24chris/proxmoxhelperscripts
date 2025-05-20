@@ -144,4 +144,5 @@ fi
 echo -e "${COLOR}"
 generate_ascii_art "$USERID"
 echo -e "${cRESET}"
-echo 
+echo
+

@@ -32,4 +32,5 @@ sudo docker volume rm portainer_data
 
 echo 
 echo ">>> Portainer Agent wurde erfolgreich deinstalliert!"
-echo  
+echo 
+

@@ -63,4 +63,5 @@ fi
 echo -e "${COLOR}"
 echo "${WELCOME_MSG} ${USERID}"
 echo -e "${cRESET}"
-echo 
+echo
+

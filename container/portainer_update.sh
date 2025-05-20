@@ -1,7 +1,7 @@
 #!/bin/bash
 # Skript zur Aktualisierung von Portainer auf einem Debian-basierten System
 
-echo 
+echo
 echo "--- Portainer-Update ------------------------------------------------------"
 echo
 
@@ -36,4 +36,5 @@ sudo docker ps | grep portainer
 
 echo
 echo ">>> Portainer wurde erfolgreich aktualisiert und laeuft!"
-echo 
+echo
+

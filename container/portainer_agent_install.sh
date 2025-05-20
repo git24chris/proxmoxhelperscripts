@@ -26,4 +26,4 @@ sudo docker ps | grep portainer_agent
 
 echo 
 echo ">>> Portainer Agent wurde erfolgreich installiert und laeuft!"
-echo  
+echo 

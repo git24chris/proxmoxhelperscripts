@@ -32,4 +32,4 @@ sudo docker volume rm portainer_data
 
 echo
 echo ">>> Portainer wurde erfolgreich deinstalliert!"
-echo  
+echo
