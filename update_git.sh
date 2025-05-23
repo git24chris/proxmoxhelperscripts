@@ -1,7 +1,7 @@
 #!/bin/bash
 # Dieses Skript fuegt alle Aenderungen zum Git-Repository hinzu, commitet sie und pusht sie nach GitHub.
-# Schritt 1: Pruefen, ob ein Git-Repository existiert
 
+# Schritt 1: Pruefen, ob ein Git-Repository existiert
 if [ ! -d .git ]; then
     echo "Fehler: Dies ist kein Git-Repository! Bitte zuerst mit 'git init' initialisieren."
     exit 1
@@ -32,5 +32,4 @@ git push origin main
 # Falls dein Branch 'master' statt 'main' heisst, ersetze 'main' mit 'master'
 # git push origin master
 
-echo "Fertig! Aenderungen erfolgreich synchronisiert."
-echo 
+echo "Fertig! Aenderungen erfolgreich synchronisiert."ah0`i0ai0
