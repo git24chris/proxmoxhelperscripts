@@ -32,4 +32,4 @@ git push origin main
 # Falls dein Branch 'master' statt 'main' heisst, ersetze 'main' mit 'master'
 # git push origin master
 
-echo "Fertig! Aenderungen erfolgreich synchronisiert."ah0`i0ai0
+echo "Fertig! Aenderungen erfolgreich synchronisiert."
