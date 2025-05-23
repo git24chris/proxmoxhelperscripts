@@ -8,11 +8,13 @@ if [ ! -d .git ]; then
 fi
 
 # Schritt 2: Alle Aenderungen dem Staging-Bereich hinzufuegen
+echo
 echo "Fuege alle Aenderungen hinzu..."
 git add .
 
 # Schritt 3: Commit-Nachricht generieren
 COMMIT_MESSAGE="Automatische Aktualisierung am $(date +"%Y-%m-%d %H:%M:%S")"
+echo
 echo "Commit-Nachricht: $COMMIT_MESSAGE"
 
 # Schritt 4: Commit ausfuehren
@@ -26,10 +28,13 @@ if [ -z "$REMOTE_URL" ]; then
 fi
 
 # Schritt 6: Aenderungen nach GitHub pushen
+echo
 echo "Push nach GitHub..."
 git push origin main
 
 # Falls dein Branch 'master' statt 'main' heisst, ersetze 'main' mit 'master'
 # git push origin master
 
+echo
 echo "Fertig! Aenderungen erfolgreich synchronisiert."
+echo
