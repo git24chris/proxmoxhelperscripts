@@ -1,3 +1,4 @@
+echo '
 #!/bin/bash
 # Skript zur Ausgabe von kompakten Systeminformationen inklusive IP-Adresse, DNS-IP, DHCP-IP, SUDO und SSH
 
@@ -98,7 +99,7 @@ generate_ascii_art() {
     patterns["*"]="  *   \n * *  \n***** \n * *  \n  *   "
     patterns["~"]="      \n ~ ~  \n~ ~   \n      \n      "
     patterns["@"]="  @@@@ \n @    @\n@  @@@@\n@ @   @\n @@@@@ \n      @"
-
+    
     # ASCII-Art Zeilenweise generieren
     for ((i=0; i<5; i++)); do
         line=""
@@ -144,5 +145,6 @@ fi
 echo -e "${COLOR}"
 generate_ascii_art "$USERID"
 echo -e "${cRESET}"
-echo
+echo 
 
+' > /etc/profile.d/show_info.sh && chmod +x /etc/profile.d/show_info.sh

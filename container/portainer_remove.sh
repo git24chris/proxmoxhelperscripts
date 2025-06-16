@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Skript zur Deinstallation von Portainer auf einem Debian-basierten System
 
@@ -32,4 +33,5 @@ sudo docker volume rm portainer_data
 
 echo
 echo ">>> Portainer wurde erfolgreich deinstalliert!"
-echo
+echo  
+

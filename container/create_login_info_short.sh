@@ -1,3 +1,4 @@
+echo '
 #!/bin/bash
 # Skript zur Ausgabe von kompakten Systeminformationen inklusive IP-Adresse, DNS-IP, DHCP-IP, SUDO und SSH
 
@@ -63,5 +64,5 @@ fi
 echo -e "${COLOR}"
 echo "${WELCOME_MSG} ${USERID}"
 echo -e "${cRESET}"
-echo
-
+echo 
+' > /etc/profile.d/show_info.sh && chmod +x /etc/profile.d/show_info.sh

@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Skript zur Installation von Docker auf einem Debian-basierten System
 
@@ -45,3 +46,4 @@ sudo docker --version
 echo
 echo "Docker wurde erfolgreich installiert!"
 echo  
+

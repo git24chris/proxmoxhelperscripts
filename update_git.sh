@@ -36,5 +36,5 @@ git push origin main
 # git push origin master
 
 echo
-echo "Fertig! Aenderungen erfolgreich synchronisiert."
+echo "Fertig! Aenderungen sind erfolgreich synchronisiert."
 echo

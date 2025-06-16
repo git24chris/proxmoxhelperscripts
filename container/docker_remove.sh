@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Skript zur vollstaendigen Entfernung von Docker auf einem Debian-basierten System
 
@@ -52,3 +53,4 @@ sudo apt-get autoclean -y
 echo
 echo "Docker wurde vollstaendig entfernt!"
 echo  
+

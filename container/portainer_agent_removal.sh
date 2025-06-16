@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Skript zur Deinstallation des Portainer Agents auf einem Debian-basierten System
 
@@ -32,5 +33,5 @@ sudo docker volume rm portainer_data
 
 echo 
 echo ">>> Portainer Agent wurde erfolgreich deinstalliert!"
-echo 
+echo  
 
