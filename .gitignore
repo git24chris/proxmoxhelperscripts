@@ -1,0 +1,3 @@
+# Hier alle Filenamen auflisten, die nicht ins Repository gesynched werden sollen
+update_git.sh
+update_local.sh
